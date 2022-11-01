@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="slide_show.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="feature_categories.css">
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+  <div class="navbar">
+
+    <div class="logo">
+    </div>
+
+    <div class="navbar">
+      <ul>
+          <li><a href="home"><i class="fa-solid fa-house-user"></i></a></li>
+          <li><a href="shop"><i class="fa-solid fa-shop"></i></a></li>
+          <li><a href="account"><i class="fa-solid fa-user"></i>
+            
+          <li><a href="cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="scroll">
+      <div class="slides">
+        <!-- radio button for silde -->
+        <input type="radio" name="radio_btn" id="radio1">
+        <input type="radio" name="radio_btn" id="radio2">
+        <input type="radio" name="radio_btn" id="radio3">
+        <input type="radio" name="radio_btn" id="radio4">
+
+        <!-- slide images -->
+        <div class="slide first">
+              <img src="Images/slide1.jpg" alt="">
+        </div>
+
+        <div class="slide">
+              <img src="Images/slide2.jpg" alt="">
+        </div>
+
+        <div class="slide">
+              <img src="Images/slide3.jpg" alt="">
+        </div>
+
+        <div class="slide">
+              <img src="Images/slide4.jpg" alt="">
+        </div>
+
+        <!-- automatic slide show -->
+        <div class="auto_slide">
+              <div class="auto_btn1"></div>
+              <div class="auto_btn2"></div>
+              <div class="auto_btn3"></div>
+              <div class="auto_btn4"></div>
+        </div>
+
+        <!-- manual slide show -->
+        <div class="manual_slide">
+              <label for="radio1" class="manual_btn"></label>
+              <label for="radio2" class="manual_btn"></label>
+              <label for="radio3" class="manual_btn"></label>
+              <label for="radio4" class="manual_btn"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  <script>
+        var counter =1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter ++;
+            if(couter > 4){
+                counter = 1;
+            }
+        },5000);
+    </script>
+
+    <div class="seperetor1">
+        <img src="Images/page_seperator.png">
+    </div>
+    
+    <!-- features categories-->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="Images/categories1.jpg" alt="">
+                </div>
+
+                <div class="col-1">
+                    <img src="Images/categories2.jpg" alt="">
+                </div>
+
+                <div class="col-1">
+                    <img src="Images/categories3.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div> 
+
+    <div class="seperetor1">
+        <img src="Images/page_seperator.png">
+    </div>
+
+    <!-- products-->
+    <div class="products">
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product1.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product2.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product3.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="Images/product4.jpg">
+            </div>
+            <div class="contentBx">
+                <h2>Nekles</h2>
+                  
+                <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+                </div>
+                <a href="#">Buy Now</a>
+                <a href="#">Add Cart</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product5.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product6.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product7.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product8.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product9.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product10.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+              <img src="Images/product11.jpg">
+            </div>
+            <div class="contentBx">
+              <h2>Nekles</h2>
+              <div class="price">
+                <h3>price : ₹ 1000/-</h3>
+              </div>
+              <a href="#">Buy Now</a>
+              <a href="#">Add Cart</a>
+            </div>
+      </div>
+
+      <div class="card">
+        <div class="imgBx">
+          <img src="Images/product12.jpg">
+        </div>
+        <div class="contentBx">
+          <h2>Nekles</h2>
+          <div class="price">
+            <h3>price : ₹ 1000/-</h3> 
+          </div>
+          <a href="#">Buy Now</a>
+          <a href="#">Add Cart</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="seperetor1">
+    <img src="Images/page_seperator.png">
+  </div>
+</body>
+</html>  

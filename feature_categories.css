@@ -1,0 +1,26 @@
+.seperetor1 img{
+    width: 50%;
+    height: 30px;
+    margin-left: 25%;
+}
+.row .col-1{
+    flex-basis:  40%;
+    margin-bottom: 30px;
+}
+
+.col-1 img{
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 0 15px rgba(247, 74, 106, 0.425); 
+}
+
+.small-container{
+    max-width: 1080px;
+    margin-left: 220px;
+    padding: 60;
+}
+
+.small-container .row{
+    display: flex;
+    margin-top: 50px;
+}
