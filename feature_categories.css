@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.categories h1{
+    color: brown;
+    font-size: 60px;
+    margin-left: 550px;
+    font-weight: 30px;
+    letter-spacing: 0.25px;
+    font-family: 'Nunito';
+}
+.categories p{
+    margin-left: 500px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
 .seperetor1 img{
     width: 50%;
     height: 30px;

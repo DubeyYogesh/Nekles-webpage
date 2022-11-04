@@ -13,9 +13,10 @@
 }
 
 .slides{
-    width: 50rem;
-    height: 30.2rem;
+    width: 50vw;
+    height: auto;
     display: flex;
+    justify-content: space-around;
 }
 
 .slides input{
@@ -25,11 +26,6 @@
 .scroll{
     width: 50%;
     transition: 2s;
-}
-
-.slide img{
-    width: 50rem;
-    height: 30.2rem;
 }
 
 .manual_slide{
@@ -43,7 +39,7 @@
 .manual_btn{
     border: 2px solid rgb(246, 39, 39);
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 50%;
     cursor: pointer;
     transition: 1s;
 }
@@ -57,19 +53,19 @@
 }
 
 #radio1:checked ~ .first{
-    margin-left: 0;
+    margin-left: 155vw;
 }
 
-#radio2:checked ~ .first{
-    margin-left: -20%;
+#radio2:checked ~ .second{
+    margin-left: 111vh;
 }
 
-#radio3:checked ~ .first{
-    margin-left: -40%;
+#radio3:checked ~ .third{
+    margin-left: -50vw;
 }
 
-#radio4:checked ~ .first{
-    margin-left: -60%;
+#radio4:checked ~ .fourth{
+    margin-left: -158vw;
 }
 
 .auto_slide{

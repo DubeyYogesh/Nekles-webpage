@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+letter-spacing: 1px;
+}
+
+body{
+font-family: 'Nunito';
+background-color: #fee1e7;
+}
+
+.navbar{
+    width: 100%;
+    top: 10px;
+    z-index: 1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(247, 74, 106, 0.104);
+}
+.navbar img{
+    margin-left: 40px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    margin-right: 60px;
+}
+
+.navbar ul li a .icon{
+    font-size: 20px;
+    color: black;
+}
+
+.wrapper{
+max-width: 750px;
+height: 500px;
+margin: 50px auto;
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 0 0 40px rgba(255, 0, 0, 0.719);
+backdrop-filter: blur(5px);
+border-radius: 5%;
+display: flex;
+justify-content: space-between;
+background:linear-gradient(90deg,gold,rgb(255, 236, 131));
+}
+.wrapper form{
+    margin: 20px;
+}
+.wrapper .imgslide img{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.wrapper .title h1{
+text-align: center;
+color: black;
+margin-bottom: 30px;
+}
+
+.login-container{
+width: 100%
+}
+
+.login-container .email{
+margin-bottom: 35px;
+position: relative;
+}
+
+.login-container .bi{
+position: absolute;
+bottom: 15px;
+right: 25px;
+font-size: 25px;
+color: black;
+}
+
+.login-container .label{
+display: block;
+color: black;
+margin-bottom: 5px;
+}
+
+.login-container .input{
+max-width: 325px;
+width: 100%;
+border: 2px solid black;
+padding: 20px 15px;
+font-size: 16px;
+border-radius: 30px;
+background: rgba(105, 105, 105, 0.55);
+font-weight: bold;
+outline: none;
+}
+
+::-webkit-input-placeholder {
+/* Chrome/Opera/Safari */
+color: black;
+}
+
+.login-container .password{
+margin-bottom: 20px;
+position: relative;
+}
+
+.login-container .forgot{
+margin-bottom: 30px;
+}
+
+.login-container .forgot a{
+float: right;
+color: #ff0000;
+transition: all 0.5s ease; 
+}
+
+.login-container .forgot a:hover{
+color: #fff;
+}
+
+.login button{
+background: #ffffff;
+text-align:  center;
+border-radius: 20px;
+padding: 20px 130px;
+font-weight: bold;
+}
+
+.login a{
+    color: rgb(0, 213, 255);
+    font-size: 20px;
+}

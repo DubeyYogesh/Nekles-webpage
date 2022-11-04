@@ -7,6 +7,20 @@
     margin: 40px 200px;
     }
 
+h1{
+    color: brown;
+    font-size: 60px;
+    margin-left: 500px;
+    font-weight: 30px;
+    letter-spacing: 0.25px;
+    font-family: 'Nunito';
+}
+p{
+    margin-left: 480px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
 .products .card{
     position: relative;
     width: 320px;

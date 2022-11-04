@@ -10,27 +10,136 @@
 body{
     background-color: #fee1e7;
 }
+
 ::-webkit-scrollbar{         /*pseudo elements to customize the browser's scrollbar: */
     width: 0px; 
 }
 
 .navbar{
-    width: 100%;
     top: 10px;
     z-index: 1;
-    height: 60px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgba(247, 74, 106, 0.104);
+}
+.navbar img{
+    margin-left: 40px;
 }
 
 .navbar ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
     position: relative;
+    top: 10px;
+    margin-right: 60px;
 }
 
-.navbar ul li a{
-    color: black;
+.navbar ul li a .home .icon{
+    font-size: 35px;
+    color: brown;
+}
+
+.navbar ul li a .home span{
+    display: flex;
+    margin-left: -10px;
+    font-size: 20px;
+    color: brown;
+}
+
+.navbar ul li a .shop .icon{
+    font-size: 35px;
+    color: brown;
+}
+
+.navbar ul li a .shop span{
+    display: flex;
+    text-decoration: none;
+    margin-left: -5px;
+    font-size: 20px;
+    color: brown;
+}
+
+.navbar ul li a .account .icon{
+    font-size: 35px;
+    color: brown;
+}
+
+.navbar ul li a .account span{
+    display: flex;
+    text-decoration: none;
+    margin-left: -20px;
+    font-size: 20px;
+    color: brown;
+}
+
+.navbar ul li a .cart .icon{
+    font-size: 35px;
+    color: brown;
+}
+
+.navbar ul li a .cart span{
+    display: flex;
+    text-decoration: solid;
+    font-size: 20px;
+    color: brown;
+}
+
+.navbar ul li .accountpop{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgb(131, 39, 41);
+    display: block;
+    min-width: 200px;
+    margin-left: -65px;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-10%, 10px);
+    transition: all .3s;
+    visibility: hidden;
+    z-index: 10px;
+}
+
+.navbar ul li .accountpop h4{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navbar ul li .accountpop h6{
+    padding: 10px;
+    font-size: 10px;
+}
+
+.navbar ul li .aaccountpop .accountpopcus{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 5px;
+}
+
+.navbar ul li .aaccountpop .accountpopcus
+#cus_button .secondary-btn{
+    background-color: #fff;
+    border: 1px solid #832729;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #832729;
+    cursor: pointer;
+    position: relative;
+    line-height: 1em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#cus_button .primary-btn{
+    background-color: #832729;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #832729;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
 }
